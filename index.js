@@ -3,6 +3,6 @@ exports.function = (req, res) => {
     res.status(400).send('Please specify a name query parameter. Example ?name=Max');
   } else {
     console.log(req.query.name);
-    res.status(200).send('Hello ' + req.query.name);
+    res.status(200).send('Hello ' + req.query.name + '! How are you?');
   }
 };
